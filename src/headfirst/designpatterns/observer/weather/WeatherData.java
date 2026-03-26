@@ -21,8 +21,9 @@ public class WeatherData implements Subject {
 	}
 	
 	public void notifyObservers() {
+		// we dont need to pass in temp, humidity and presssure, not all the observer need all of the state
 		for (Observer observer : observers) {
-			observer.update(temperature, humidity, pressure);
+			observer.update();
 		}
 	}
 	
