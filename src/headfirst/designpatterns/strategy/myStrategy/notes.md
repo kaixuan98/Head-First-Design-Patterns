@@ -19,4 +19,9 @@ Strategy Pattern - Create interface of Flyable and Quackable, then create concre
     - When add new fly or quack method, we just create new concrete flyable and quackable 
     
 
-
+#### Payment example 
+Strategy pattern is usually used in e-commerce payment method, where the platform needed to support multiple payment type for their customers. This example, we would support Credit, Debit, Buy Now Pay Later and Paypal. Customer get to select the payment that they need. 
+    - Each payment has their own information to collect
+        - Credit Card: Credit card number, CVV, Expiry Date, Name 
+        - Debit Card: Debit Card Number, CVV, Expiry Date
+        - Paypal: email
